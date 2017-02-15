@@ -1,0 +1,3 @@
+gcc -c nomain.c
+objcopy --redefine-sym entry=main nomain.o
+gcc nomain.o
